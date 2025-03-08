@@ -28,11 +28,12 @@ function jugar() {
 }
 
 function orden(numero1, numero2, numero3) {
-    let numeroMayor = Math.max(numero1, numero2, numero3);
-    let numeroMenor = Math.min(numero1, numero2, numero3);
-    let numeroMedio = (numero1 !== numeroMayor && numero1 !== numeroMenor) ? numero1 :
-        (numero2 !== numeroMayor && numero2 !== numeroMenor) ? numero2 :
-        numero3;
+    let numeros = [numero1, numero2, numero3];
+    numeros.sort((a, b) => a - b); // Ordenar los números en orden ascendente
+
+    let numeroMenor = numeros[0];
+    let numeroMedio = numeros[1];
+    let numeroMayor = numeros[2];
 
     console.log(`${numeroMayor}, ${numeroMedio}, ${numeroMenor}`);
     console.log(`${numeroMenor}, ${numeroMedio}, ${numeroMayor}`);
@@ -45,51 +46,5 @@ function sonIguales(numero1, numero2, numero3) {
     if (numero1 === numero2 && numero2 === numero3) {
         mensaje = "¡Todos los números son iguales!";
     } else {
-        mensaje = "Los números fueron diferentes";
-    }
+        mensaje = "Los números fueron
 
-    console.log(mensaje);
-    return mensaje;
-}
-
-function visualizarEnDom(num1, num2, num3) {
-    const parrafo1 = document.createElement("p");
-    parrafo1.textContent = "Números del mayor al menor: ";
-    document.body.append(parrafo1);
-
-    document.body.append(document.createElement("ul"));
-
-    const mayor1 = document.createElement("li");
-    mayor1.textContent = num1;
-    document.body.append(mayor1);
-
-    const medio1 = document.createElement("li");
-    medio1.textContent = num2;
-    document.body.append(medio1);
-
-    const menor1 = document.createElement("li");
-    menor1.textContent = num3;
-    document.body.append(menor1);
-
-    const parrafo2 = document.createElement("p");
-    parrafo2.textContent = "Números del menor al mayor: ";
-    document.body.append(parrafo2);
-
-    document.body.append(document.createElement("ul"));
-
-    const menor2 = document.createElement("li");
-    menor2.textContent = num3;
-    document.body.append(menor2);
-
-    const medio2 = document.createElement("li");
-    medio2.textContent = num2;
-    document.body.append(medio2);
-
-    const mayor2 = document.createElement("li");
-    mayor2.textContent = num1;
-    document.body.append(mayor2);
-
-    const parrafo3 = document.createElement("p");
-    parrafo3.textContent = sonIguales(num1, num2, num3);
-    document.body.append(parrafo3);
-}
