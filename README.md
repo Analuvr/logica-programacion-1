@@ -1,6 +1,9 @@
-ACTIVIDAD 34.4- SA-PLD1 - Práctica de Comparación de Números
+# logica-programacion-1
+34.4 - SA-PLD1 - Práctica de Comparación de Números
 
-INSTRUCCIONES:
+# ACTIVIDAD 34.4- SA-PLD1 - Práctica de Comparación de Números
+
+## INSTRUCCIONES:
 1. Crear un programa en Javascript que realice lo siguiente:
     • Debe solicitar al usuario 3 números por prompt y guardarlos en sus respectivas variables.
     • Debe analizar los números, identificar cual es el número mayor, el número del centro y el número menor.
@@ -25,3 +28,5 @@ INSTRUCCIONES:
 3. Pruébalo con las combinaciones de números que se te ocurran.
 4. Al final de tu práctica, tienes que subir el ejercicio a tu repositorio de GitHub.
 5. Colócalo en un repositorio llamado “logica-programacion-1”
+
+
