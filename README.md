@@ -1,7 +1,7 @@
 # logica-programacion-1
 34.4 - SA-PLD1 - Práctica de Comparación de Números
 
-# ACTIVIDAD 34.4- SA-PLD1 - Práctica de Comparación de Números
+## ACTIVIDAD 34.4- SA-PLD1 - Práctica de Comparación de Números
 
 ## INSTRUCCIONES:
 1. Crear un programa en Javascript que realice lo siguiente:
